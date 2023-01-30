@@ -28,7 +28,8 @@ Instructions for building this project can be found at https://www.freecodecamp.
       ]
 
       days_later = 0
-      factors = (60, 1) # will multiply factors with hours:minutes to convert to just minutes
+      # multiply hours:minutes by minutes to convert to minutes
+      factors = (60, 1) 
       start = start.split(" ")
       am_pm = start[1]
       if am_pm == "AM" and start[0] == 12:
