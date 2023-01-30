@@ -1,4 +1,4 @@
-# TimeCalculator
+# Time-Calculator
 ### Scientific Computing with Python, course offered by freecodecamp.org
 
 This function calculates time and day of the week given start time, duration, and current day. Unable to use any python libraries, like **datetime**
@@ -33,7 +33,9 @@ Instructions for building this project can be found at https://www.freecodecamp.
       am_pm = start[1]
       if am_pm == "AM" and start[0] == 12:
           start[0] = 0
-      start_mins = sum(i * j for i, j in zip(map(int, start[0].split(":")), factors)) # this formula converts time to minutes
+      # formula converts time to minutes
+      start_mins = sum(i * j for i, j in zip(map(int, 
+                         start[0].split(":")), factors)) 
       if am_pm == "PM" and start[0] != 12:
           start_mins = start_mins + half_mins
 
